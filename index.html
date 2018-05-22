@@ -8,7 +8,7 @@
 
   </head>
   <body>
-
+<div id="flexitup">
 <div id="miterFinder">
   <h3>Miter Finder 5000</h3>
 <form id="miter">
@@ -28,26 +28,24 @@
 </select>
 
 
-
-<!-- <input id="pipeSize" type="number" min="2" max="48" step="2" onchange='calculateSize(this.value)' /> -->
-<!-- <button type ="button" onclick="getCenter()">Submit</button> -->
+<p>Radius:<br>
+<select onclick='rChange()'>
+ <option id= "longRadius" value="lr" selected>L.R.</option>
+ <option id="threeR" value="3r">3 R</option>
+ <option id="sixR" value="6r">6 R</option>
+</select>
 <p>
   Angle:
-  <input id="pipeAngle" type="number" min="5" max="89" onchange='findMiter(this.value)'/>
-  <p>
-    Pipe Thickness:
-    <select id="pipeThick" name="Thickness">
- <option value="sch40" selected>Schedule 40</option>
- <option value="sch80">Schedule 80</option>
- <option value="xxh">XXH</option>
-</select>
+  <input id="pipeAngle" type="number" min="5" max="89" onclick='findMiter(this.value)'/>
+
+<p>
 <button type='button'>submit</button>
 </form>
 Outside:<span id='outs'></span>
 <p>
 Inside:<span id='ins'></span>
 </div>
-
+</div>
 
 
 
